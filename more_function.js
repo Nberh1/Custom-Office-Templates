@@ -1,3 +1,4 @@
+"use strict"
 function displayMailingLabel(name, address,city, state, zip) {
     console.log(name, address, city, state, zip)
 }
