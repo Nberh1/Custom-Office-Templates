@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off by One Websitet</title>
+  </head>
+  <body>
+    <main>
+      <input type="date" name=" " id="dateInput" />
+      <button id="displayButton">display date</button>
+    <p id="messageButton"></p>
+    </main>
+    <footer></footer>
+    <script>
+      function init() {
+        const displayDate = document.getElementById("displayButton");
+        displayButton.onclick = displayDate;
+      }
+
+      function displayDate() {
+        let messageParagraph = document.getElementById("messageParagraph");
+        let dateInput = document.getElementById("dateInput");
+        let d = new Date(dateInput.value)
+        messageParagraph.innerText = "d.toString()";
+      }
+      window,onload = init;
+    </script>
+  </body>
+</html>
